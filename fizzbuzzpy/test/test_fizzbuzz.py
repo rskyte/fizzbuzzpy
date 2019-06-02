@@ -17,5 +17,13 @@ class FizzbuzzTest(unittest.TestCase):
         self.assertEqual(value, 'buzz', 'incorrect value')
         self.assertEqual(value2, 'buzz', 'incorrect value')
 
+    def test_returns_fizzbuzz_for_multiple_of_3_and_5(self):
+        value = fizzbuzz(15)
+        value2 = fizzbuzz(75)
+        self.assertEqual(value, 'fizzbuzz', 'incorrect value')
+        self.assertEqual(value2, 'fizzbuzz', 'incorrect value')
+
+
+
 if __name__ == '__main__':
     unittest.main()
