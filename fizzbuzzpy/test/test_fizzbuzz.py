@@ -35,5 +35,11 @@ class FizzbuzzTest(unittest.TestCase):
         self.assertEqual(value, '1', FAILURE)
         self.assertEqual(value2, '74', FAILURE)
 
+    def test_returns_invalid_for_negative_numbers(self):
+        value = fizzbuzz(-1)
+        value2 = fizzbuzz(-74)
+        self.assertEqual(value, 'invalid number', FAILURE)
+        self.assertEqual(value2, 'invalid number', FAILURE)
+
 if __name__ == '__main__':
     unittest.main()

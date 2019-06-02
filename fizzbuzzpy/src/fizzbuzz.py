@@ -9,6 +9,8 @@ def fizzbuzz(num):
         return 'buzz'
     elif num % 3 == 0:
         return 'fizz'
+    elif num < 0:
+        return 'invalid number'
     else:
         return str(num)
     
