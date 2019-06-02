@@ -7,5 +7,11 @@ Logic for the fizzbuzz game.
 * Any other positive integer aswell as zero returns the original number
 * Negative numbers are not allowed
 
+#### Prerequisites
+Python 3.6^ - download the latest [here](https://www.python.org/downloads/)
+
 #### Running tests
-`$ insert command here`
+```
+    $ cd fizzbuzzpy-git
+    $ python3 fizzbuzzpy/test/test_fizzbuzz.py
+```
