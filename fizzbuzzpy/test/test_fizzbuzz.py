@@ -29,5 +29,11 @@ class FizzbuzzTest(unittest.TestCase):
         value = fizzbuzz(0)
         self.assertEqual(value, '0', FAILURE)
 
+    def test_returns_original_number(self):
+        value = fizzbuzz(1)
+        value2 = fizzbuzz(74)
+        self.assertEqual(value, '1', FAILURE)
+        self.assertEqual(value2, '74', FAILURE)
+
 if __name__ == '__main__':
     unittest.main()

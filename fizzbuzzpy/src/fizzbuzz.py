@@ -9,4 +9,6 @@ def fizzbuzz(num):
         return 'buzz'
     elif num % 3 == 0:
         return 'fizz'
+    else:
+        return str(num)
     
